@@ -1,0 +1,173 @@
+body {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    font-family: tahoma;
+    overflow: hidden;
+    height: 100vh;
+    background: #f8eff8;
+}
+
+.box-numeros {
+    display:block ;
+    padding: 7px;
+    width: 400px;
+    height: 410px;
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    background: #fff;
+    order: 2;
+    box-shadow: 0 0 15px 5px #dfdede;
+}
+
+
+button {
+    margin: 5px;
+    padding: 3px;
+    width: 100px;
+    height: 60px;
+    font-size:50px;
+    margin-top: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    background: #fbcdff;
+    color: #424242;
+    box-shadow: 0 10px 15px 5px #dfdede;
+}
+
+button:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: 0 0 19px 7px #fbcdff;
+    border: none;
+    color: #fff;
+}
+
+h3 {
+    font-size: 35px;
+    margin-bottom: -15px;
+}
+
+.targeta {  
+    background-color: #000;
+    width: 450px;
+    border: 10px solid #ccc;
+    height: 14px;
+    margin-bottom: 50px;
+    border-radius:20px ;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 10px;
+}
+
+.targeta-h2 {
+    margin-top: 25px;
+    padding: 5px;
+}
+
+.box-resultado {
+    background-color: #000;
+    color: #9cff9c;
+    text-shadow: 0 0 10px #00ff00;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 3px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;   /* Centra horizontal */
+    align-items: center;        /* Centra vertical */
+    font-size: 40px ;
+    width:400px;
+    height: 90px;
+    border: 10px solid #ccc;
+    border-radius: 20px;
+}
+
+.borrar-pago {
+    color:#000;
+    margin-left: 40px;
+    padding: 3px;
+    width: 160px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom:60px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+#btn-borrar:hover {
+    background-color: red;
+    box-shadow: 0 0 19px 7px rgba(255, 0, 0, 0.692);
+}
+
+#btn-pagar:hover {
+    background-color: green;
+    box-shadow: 0 0 19px 7px #00ff00be;
+}
+
+@media (max-width: 480px) {
+
+    body {
+        overflow: auto;
+        padding-top: 20px;
+    }
+
+    .targeta {
+        width: 90%;
+        height: 20px;
+        margin-bottom: 40px;
+    }
+
+    .targeta-h2 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .box-resultado {
+        width: 85%;
+        font-size: 22px;
+        padding: 15px;
+        height: 100px;
+        box-sizing: content-box;
+    }
+
+    .box-numeros {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    button {
+        width: 28%;
+        height: 55px;
+        margin: 10px 1%;
+        font-size: 35px;
+        border-radius: 25px;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .box-resultado {
+    color: #9cff9c;
+    text-shadow: 0 0 10px #00ff00;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 3px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;   /* Centra horizontal */
+    align-items: center;        /* Centra vertical */
+    font-size: 40px ;
+    }
+
+    .borrar-pago {
+    width: 26%;
+    height: 3%;
+    padding-bottom: 10%;
+}
+
+}
